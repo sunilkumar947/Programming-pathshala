@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT 1</title>
+    <style>
+        body{
+            background-color: azure;
+        }
+        #user-details {
+            text-align: center;
+            border: 1px solid black;
+            padding: 20px;
+            display: none;
+            background-color: lightyellow;
+            width: 400px;
+            margin: 20px auto;
+            height: 200px;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div>
+        <h1 style="color:rgb(50, 48, 45); background-color:aqua; text-align:center;text-decoration: underline;border:5px solid red "> This Is Project 1 </h1>
+    </div>
+    <hr>
+
+    <div style="width: 500px; height: 500px; border: 2px solid black; padding: 20px; background-color: lightgray; margin: 20px auto; text-align: center;">
+
+        <!-- Login Form -->
+        <form id="login-form">
+            <h2>Login</h2>
+            <div style="margin-bottom: 10px;">
+                <label for="username" style="display: block; margin-bottom: 5px;">Username:</label>
+                <input type="text" id="login-username" name="username" style="width: 50%; padding: 5px;" placeholder="username">
+            </div>
+            <div style="margin-bottom: 10px;">
+                <label for="password" style="display: block; margin-bottom: 5px;">Password:</label>
+                <input type="password" id="login-password" name="password" style="width: 50%; padding: 5px ;" placeholder="password">
+            </div>
+            <button type="button" onclick="login()" style="padding: 10px 20px; background-color: black; color: white; border: none; cursor: pointer;">Login</button>
+            <button type="button" onclick="showRegisterForm()" style="padding: 10px 20px; background-color: black; color: white; border: none; cursor: pointer;">Register</button>
+        </form>
+
+        <!-- Registration Form -->
+        <form id="register-form" style="display: none;">
+            <h2>Register</h2>
+            <div style="margin-bottom: 10px;">
+                <label for="register-username">Username:</label>
+                <input type="text" id="register-username" name="register-username" placeholder="Choose a username">
+            </div>
+            <div style="margin-bottom: 10px;">
+                <label for="register-password">Password:</label>
+                <input type="password" id="register-password" name="register-password" placeholder="Choose a password">
+            </div>
+            <div style="margin-bottom: 10px;">
+                <label for="register-email">Email:</label>
+                <input type="email" id="register-email" name="register-email" placeholder="Enter your email">
+            </div>
+            <button type="button" onclick="register()" style="padding: 10px 20px; background-color: black; color: white; border: none; cursor: pointer;">Register</button>
+            <button type="button" onclick="showLoginForm()" style="padding: 10px 20px; background-color: black; color: white; border: none; cursor: pointer; margin-right: 10px;">Login</button>
+        </form>
+
+        <div id="user-details">
+            <h2>User Details</h2>
+            <p id="user-info"></p>
+        </div>
+
+    </div>
+    
+    
+
+    <script src="fnc.js"></script>
+</body>
+</html>
